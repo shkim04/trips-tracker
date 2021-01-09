@@ -1,0 +1,171 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+#root {
+    font-family: inherit;
+}
+
+.create-trip-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.create-trip-main-container .create-trip-container {
+    width: 35%;
+    margin: 0 auto;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    padding: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.form-group {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.form-group:first-child {
+    margin-top: 30px; 
+}
+
+.form-group .form-control {
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+}
+
+div:focus, textarea:focus, input:focus{
+    box-shadow: 0.2px 0.2px 2px #ff0000;
+    z-index: 2;
+    outline: none;
+}
+
+.drop-down, .dropdown-content-container {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content-container .drop-down-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.arrow-down {
+    height: 3px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform-origin: top;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.drop-down-selector {
+    border-collapse: collapse;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 24vh;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+  
+.drop-down-selector li {
+    list-style: none;
+    padding: 2px 0 2px 5px;
+    cursor: pointer;
+}
+
+.drop-down-selector li:hover {
+    background-color: #eeeeee;
+}
+
+.start-date-container, .end-date-container {
+    width: 49%;
+    display: inline-block;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.start-end-divider {
+    width: 2%;
+    display: inline-block;
+}
+
+.react-datepicker__input-container, .react-datepicker__input-container input {
+    width: 100%;
+    height: 100%;
+}
+
+.react-datepicker__input-container input {
+    padding: 0 0 0 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.react-datepicker__tab-loop {
+    display: inline-block;
+}
+
+.description-container {
+    width: 100%;
+    min-height: 70px;
+}
+
+.trip-description {
+    width: 100%;
+    height: 100%;
+    padding: 2px 0 2px 5px;
+    font: inherit;
+    display: block;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.add-trip-btn-container .btn {
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 12px 22px;
+    font-size: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.btn:hover {
+    border: 1px solid #ff0000;
+    background-color: #ffffff;
+    color: #ff0000;
+    cursor: pointer;
+}

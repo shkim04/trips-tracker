@@ -1,0 +1,78 @@
+.show-trip-main-container {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.show-trip-map-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.trip-table {
+    width: 90%;
+    margin: 20px auto 0 auto; 
+    display: table;
+}
+
+.trip-table header {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.trip-table .table-row  {
+    display: table-row;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.table-row:nth-of-type(even) {
+    background-color: #f7f7f7;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 12px 15px;
+}
+
+.country-cell, .city-cell { width: 12.5%; }
+
+.date-cell { width: 20%; }
+
+.description { width: 50%; }
+
+.delete-cell { width: 5%; padding-right: 0px; text-align: center;}
+
+.delete-cell a{
+    text-decoration: none;
+}
+
+.create-trip-btn-container {
+    width: 90%;
+    margin: 30px auto 0 auto;
+}
+
+.create-trip-btn-container .create-trip-btn {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 12px 22px;
+    font-size: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.create-trip-btn:hover {
+    border: 1px solid #ff0000;
+    background-color: #ffffff;
+    color: #ff0000;
+    cursor: pointer;
+}
