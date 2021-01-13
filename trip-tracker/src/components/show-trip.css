@@ -38,6 +38,7 @@
 .table-cell {
     display: table-cell;
     padding: 12px 15px;
+    font-weight: 600;
 }
 
 .country-cell, .city-cell { width: 12.5%; }
