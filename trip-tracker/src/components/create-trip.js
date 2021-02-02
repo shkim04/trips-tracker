@@ -81,8 +81,6 @@ export default class CreateTrip extends Component {
             endDate: this.state.endDate,
             description : this.state.description,
         }
-        
-        console.log(trip);
 
         axios.post('http://localhost:5000/trips/add', trip, async (req, res) => {
             try {
